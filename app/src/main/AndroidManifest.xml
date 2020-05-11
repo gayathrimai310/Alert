@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.alert">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".User.Account.UserAccount"/>
+        <activity android:name=".Admin.Hospital.CareGiversList" />
+        <activity android:name=".Admin.User.UserView" />
+        <activity android:name=".Admin.User.UserList" />
+        <activity android:name=".Admin.AdminDashBoard" />
+        <activity android:name=".Hospital.CareGivers" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Hospital.HospitalMapsActivity"
+            android:label="@string/title_activity_hospital_maps" />
+        <activity android:name=".Hospital.HospitalDashboard" />
+        <activity android:name=".Admin.AdminLogin" />
+        <activity android:name=".User.UserSignOut" />
+        <activity android:name=".User.FeedBackList" />
+        <activity android:name=".User.Account.Editprofile" />
+        <activity android:name=".User.Upgrade.PaymentActivity" />
+        <activity android:name=".User.Alert.EmergencyNotification" />
+        <activity android:name=".User.Alert.CheckCertainty" />
+        <activity
+            android:name=".User.UserMenu"
+            android:label="@string/title_activity_user_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".User.UserRegistration" />
+        <activity android:name=".User.UserLogin" />
+        <activity android:name=".FrontActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:enabled="true" android:name="com.example.alert.User.Alert.ShakeService"/>
+
+    </application>
+
+</manifest>

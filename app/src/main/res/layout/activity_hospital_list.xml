@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.Hospital.HospitalList">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/Gobackbutnhospital"
+            android:layout_width="40dp"
+            android:src="@drawable/goback"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital List"
+            android:fontFamily="@font/andika"
+            android:textSize="18sp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/HospitalDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hospital Details"
+        android:fontFamily="@font/andika"
+        android:drawableRight="@drawable/rightarrow"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"/>
+
+
+
+    <TextView
+        android:id="@+id/Caregiverslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caregiverslist"
+        android:drawableRight="@drawable/rightarrow"
+        android:fontFamily="@font/andika"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"/>
+
+</LinearLayout>

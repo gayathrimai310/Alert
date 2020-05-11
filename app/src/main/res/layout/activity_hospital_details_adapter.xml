@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Doctor Name:"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:drawableLeft="@drawable/person" />
+
+            <TextView
+                android:id="@+id/ADoctorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="TextView"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hospital Name:"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:drawableLeft="@drawable/hospital" />
+
+            <TextView
+                android:id="@+id/AHospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="TextView"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hospital Address:"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:drawableLeft="@drawable/addresslogo" />
+
+            <TextView
+                android:id="@+id/AAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="TextView"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contact Number:"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:drawableLeft="@drawable/phoelogo" />
+
+            <TextView
+                android:id="@+id/AContactHospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="TextView"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Landline Number:"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:drawableLeft="@drawable/telephonelogo" />
+
+            <TextView
+                android:id="@+id/ALanNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="TextView"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email ID:"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:drawableLeft="@drawable/emaillogo" />
+
+            <TextView
+                android:id="@+id/AHospitalEmailID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="TextView"
+                android:fontFamily="@font/andika"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

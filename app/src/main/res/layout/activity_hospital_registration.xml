@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hospital.HospitalRegistration">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:padding="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Sign Up"
+                android:fontFamily="@font/cinzel_decorative"
+                android:textAlignment="center"
+                android:textColor="#043BD8"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+
+
+            <!--  Name Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/doctorname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:drawableLeft="@drawable/doctor"
+                    android:hint="Doctor Name"
+                    android:textColorHint="@color/black"
+                    android:textColor="#000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--  Age -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/hospitalname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Hospital Name"
+                    android:drawableLeft="@drawable/hospital"
+                    android:fontFamily="@font/andika"
+                    android:textColorHint="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:textColor="#000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--Address-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/hosaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:drawableLeft="@drawable/addresslogo"
+                    android:hint="Address"
+                    android:textColorHint="@color/black"
+                    android:textColor="#000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Email Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/hosinput_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:drawableLeft="@drawable/emaillogo"
+                    android:hint="Email"
+                    android:textColorHint="@color/black"
+                    android:textColor="#000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Mobile Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/hosmobile_number"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/phoelogo"
+                    android:textColorHint="@color/black"
+                    android:textColor="#000"
+                    android:hint="Mobile Number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Alter Mobile Number Label-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/hoslandline_mobile_number"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/black"
+                    android:drawableLeft="@drawable/telephonelogo"
+                    android:textColor="#000"
+                    android:hint="Landline-Mobile Number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Password Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="8dp">
+
+                <EditText android:id="@+id/hospassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:textColorHint="@color/black"
+                    android:textColor="#000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="8dp">
+
+                <EditText android:id="@+id/hosrepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Re-Password"
+                    android:textColorHint="@color/black"
+                    android:textColor="#000"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Signup Button -->
+            <Button
+                android:id="@+id/hosbtn_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#229954"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColorHint="#000"
+                android:padding="12dp"
+                android:text="Create Account"/>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/hosAlreadyuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Already User"
+                android:fontFamily="@font/andika"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

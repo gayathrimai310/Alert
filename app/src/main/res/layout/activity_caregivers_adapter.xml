@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Email ID:"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:drawableLeft="@drawable/emaillogo" />
+
+        <TextView
+            android:id="@+id/AEmailID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="TextView"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Description:"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:drawableLeft="@drawable/description" />
+
+        <TextView
+            android:id="@+id/ADescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="TextView"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

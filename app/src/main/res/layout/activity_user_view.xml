@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.User.UserView">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/GobackbutnView"
+            android:layout_width="40dp"
+            android:src="@drawable/goback"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/orange"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TextView"
+        android:fontFamily="@font/andika"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/Userage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TextView"
+        android:fontFamily="@font/andika"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/Useraddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TextView"
+        android:fontFamily="@font/andika"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/Usercontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TextView"
+        android:fontFamily="@font/andika"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Useraltercontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TextView"
+        android:fontFamily="@font/andika"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Useremailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TextView"
+        android:fontFamily="@font/andika"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
